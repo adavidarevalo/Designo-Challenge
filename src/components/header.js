@@ -1,42 +1,52 @@
-import * as React from "react"
-import PropTypes from "prop-types"
+import React, {useState} from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import {HeaderContainer, MenuContainer} from '../styles/components/header'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+const Header = () => {
+  const [menu, setMenu] = useState(false)
+return(
+  <HeaderContainer>
+    <div className='container'>
+    <Link>
+      <StaticImage
+      src='../images/assets/shared/desktop/logoDark.png'
+      quality={95}
+      layout="fixed"
+      width={200}
+      height={25}
+      alt="Logo"
+    />
+    </Link>
+    <button
+    onClick={()=>setMenu(!menu)}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      {!menu 
+      ?(
+        <StaticImage
+        src='../images/assets/shared/mobile/icon-hamburger.svg'
+        quality={95}
+        alt="Logo"
+      />
+      ): (
+        <StaticImage
+        src='../images/assets/shared/mobile/icon-close.svg'
+        quality={95}
+        alt="Logo"
+      />
+      )}
+    </button>
     </div>
-  </header>
-)
+    {menu &&(
+    <MenuContainer>
+      <Link to='/'>Our company</Link>
+      <Link to='/'>Locations</Link>
+      <Link to='/'>Contact</Link>
+    </MenuContainer>
+    )}
+  </HeaderContainer>
+)}
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
