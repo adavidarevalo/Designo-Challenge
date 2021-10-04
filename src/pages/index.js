@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import AwardCart from '../components/AwardCart'
-import CardsContainer from '../components/CardsContainer'
-import SkillsContainer from '../components/SkillsContainer'
+import Layout from "../components/shared/layout"
+import Seo from "../components/shared/seo"
+import AwardCart from '../components/index/AwardCart'
+import CardsContainer from '../components/shared/CardsContainer'
+import SkillsContainer from '../components/index/SkillsContainer'
 
 
 const IndexPage = () => (

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {graphql, useStaticQuery} from "gatsby"
-import { Container } from '../styles/components/SkillsContainer'
+import { Container } from './styles/SkillsContainer'
 
 
 const SkillsContainer = () => {

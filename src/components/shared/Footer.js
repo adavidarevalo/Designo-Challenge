@@ -1,12 +1,12 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
-import { FooterContainer } from '../styles/components/Footer'
-import facebook from '../images/assets/shared/desktop/facebook.svg'
-import youtube from '../images/assets/shared/desktop/youtube.svg'
-import twitter from '../images/assets/shared/desktop/twitter.svg'
-import pinterest from '../images/assets/shared/desktop/pinterest.svg'
-import instagram from '../images/assets/shared/desktop/instagram.svg'
+import { FooterContainer } from './styles/Footer'
+import facebook from '../../images/assets/shared/desktop/facebook.svg'
+import youtube from '../../images/assets/shared/desktop/youtube.svg'
+import twitter from '../../images/assets/shared/desktop/twitter.svg'
+import pinterest from '../../images/assets/shared/desktop/pinterest.svg'
+import instagram from '../../images/assets/shared/desktop/instagram.svg'
 import CartTalk from './CartTalk'
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
         <FooterContainer>
             <div className='mainFooter'>
             <StaticImage
-                src='../images/assets/shared/desktop/logoLight.png'
+                src='../../images/assets/shared/desktop/logoLight.png'
                 quality={95}
                 layout="fixed"
                 width={220}

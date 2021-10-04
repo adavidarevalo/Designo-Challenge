@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import circle from '../../images/assets/about/desktop/circle.svg'
+import circle from '../../../images/assets/about/desktop/circle.svg'
 
 export const Container = styled.article`
 border-radius: 15px;

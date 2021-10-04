@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../styles/components/CompanyDetails'
+import { Container } from './styles/CompanyDetails'
 
 
 const CompanyDetails = ({backgroundElement, title, firstText, secondText, gridElement, ColorElement, image}) => {

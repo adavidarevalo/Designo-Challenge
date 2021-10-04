@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import {HeaderContainer, MenuContainer, MenuDesktop} from '../styles/components/header'
+import {HeaderContainer, MenuContainer, MenuDesktop} from './styles/header'
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
@@ -10,7 +10,7 @@ return(
     <div className='container'>
     <Link>
       <StaticImage
-      src='../images/assets/shared/desktop/logoDark.png'
+      src='../../images/assets/shared/desktop/logoDark.png'
       quality={95}
       layout="fixed"
       width={200}
@@ -24,13 +24,13 @@ return(
       {!menu 
       ?(
         <StaticImage
-        src='../images/assets/shared/mobile/icon-hamburger.svg'
+        src='../../images/assets/shared/mobile/icon-hamburger.svg'
         quality={95}
         alt="Logo"
       />
       ): (
         <StaticImage
-        src='../images/assets/shared/mobile/icon-close.svg'
+        src='../../images/assets/shared/mobile/icon-close.svg'
         quality={95}
         alt="Logo"
       />
@@ -39,15 +39,15 @@ return(
     </div>
     {menu &&(
     <MenuContainer>
-      <Link to='/'>Our company</Link>
-      <Link to='/'>Locations</Link>
-      <Link to='/'>Contact</Link>
+      <Link to='/company'>Our company</Link>
+      <Link to='/location'>Locations</Link>
+      <Link to='/contact'>Contact</Link>
     </MenuContainer>
     )}
     <MenuDesktop>
-      <Link to='/'>Our company</Link>
-      <Link to='/'>Locations</Link>
-      <Link to='/'>Contact</Link>
+      <Link to='/company'>Our company</Link>
+      <Link to='/location'>Locations</Link>
+      <Link to='/contact'>Contact</Link>
     </MenuDesktop>
   </HeaderContainer>
 )}

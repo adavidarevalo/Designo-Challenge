@@ -1,6 +1,7 @@
 import React from 'react'
-import Layout from "../components/layout"
-import LocationContainer from '../components/LocationContainer'
+import Layout from "../components/shared/layout"
+import Seo from "../components/shared/seo"
+import LocationContainer from '../components/location/LocationContainer'
 import styled from '@emotion/styled'
 import { useStaticQuery, graphql } from "gatsby"
 const Conatiner = styled.section`

@@ -1,6 +1,6 @@
 import React from 'react'
 import MapContainer from './MapContainer'
-import { LocationStyled } from '../styles/components/LocationContainer'
+import { LocationStyled } from './styles/LocationContainer'
 
 const LocationContainer = ({item}) => {
     console.log(item)

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import backgroundCircle from '../../images/assets/shared/desktop/backgroundCircle.svg'
+import backgroundCircle from '../../../images/assets/shared/desktop/backgroundCircle.svg'
 
 export const Container = styled.div`
 width: 90%;

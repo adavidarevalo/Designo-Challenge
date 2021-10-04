@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../styles/components/FormContainer'
+import { Container } from './styles/FormContainer'
 
 const FormContainer = () => {
     return(

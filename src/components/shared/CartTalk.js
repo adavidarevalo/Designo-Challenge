@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, BackgroundElement, Element } from '../styles/components/CartTalk'
+import { Container, BackgroundElement, Element } from './styles/CartTalk'
 
 const CartTalk = () =>{
     return(

@@ -13,13 +13,12 @@ exports.createPages = async({actions, graphql, reporter})=>{
       }
       const pageDinamic = result.data.allDatoCmsPagesdinamic.nodes;
       console.log(pageDinamic)
-      pageDinamic.forEach(element => {
-        console.log('yes baby')
+      pageDinamic.forEach(info => {
         actions.createPage({
-            path: element.name,
-            component: require.resolve('./src/components/ProjectTemplate.js'),
+            path: info.name,
+            component: require.resolve('./src/components/ProjectTemplate/ProjectTemplate.js'),
             context: {
-                name: element.name
+                name: info.name
             }
         }) 
       });

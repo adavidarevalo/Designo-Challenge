@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import circle from '../../images/assets/about/desktop/circle.svg'
+import circle from '../../../images/assets/about/desktop/circle.svg'
 
 export const LocationStyled = styled.section`
 margin-bottom: 40px;

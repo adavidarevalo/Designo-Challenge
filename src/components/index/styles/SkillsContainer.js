@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import home from '../../images/assets/home/desktop/home.svg'
+import home from '../../../images/assets/home/desktop/home.svg'
 
 export const Container =  styled.section`
 width: 90%;

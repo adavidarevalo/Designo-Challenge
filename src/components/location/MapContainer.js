@@ -1,7 +1,7 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import { MapsApiKey } from '../variables'
-import { Container } from '../styles/components/MapContainer' 
+import { MapsApiKey } from '../../variables'
+import { Container } from './styles/MapContainer' 
 
 const defaultProps = {
     center: {
