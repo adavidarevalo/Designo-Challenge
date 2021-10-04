@@ -15,6 +15,12 @@ const fadeInDown = keyframes`
 
 export const HeaderContainer = styled.header`
 padding-block: 20px;
+position: fixed;
+background: white;
+left: 0px;
+right: 0px;
+top: 0px;
+z-index: 100000;
 .container{
     width: 90%;
     margin: 0 auto;
@@ -24,6 +30,17 @@ padding-block: 20px;
     button{
         border: none;
         background: none;
+    }
+}
+@media (min-width: 825px) {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    .container{
+        width: 100%;
+        button{
+            display: none;
+        }
     }
 }
 `
@@ -46,5 +63,19 @@ a{
     font-weight: 500;
     letter-spacing: 2px;
     padding-bottom: 10px;
+}
+`
+export const MenuDesktop = styled.div`
+display: none;
+@media (min-width: 825px) {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
 }
 `

@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import {HeaderContainer, MenuContainer} from '../styles/components/header'
+import {HeaderContainer, MenuContainer, MenuDesktop} from '../styles/components/header'
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
@@ -44,6 +44,11 @@ return(
       <Link to='/'>Contact</Link>
     </MenuContainer>
     )}
+    <MenuDesktop>
+      <Link to='/'>Our company</Link>
+      <Link to='/'>Locations</Link>
+      <Link to='/'>Contact</Link>
+    </MenuDesktop>
   </HeaderContainer>
 )}
 

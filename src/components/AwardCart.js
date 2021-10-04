@@ -1,6 +1,6 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import { SectionContainer } from '../styles/components/AwardCart'
+import phone from '../images/assets/home/desktop/phone.png'
 
 const AwardCart = () =>(
     <SectionContainer>
@@ -9,12 +9,7 @@ const AwardCart = () =>(
            <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
            <button>Learn more</button>
         </div>
-        <StaticImage
-           src='../images/assets/home/desktop/image-hero-phone.png'
-           quality={95}
-           layout="fixed"
-           alt="Logo"
-         />
+        <img src={phone} alt='phone'/>
     </SectionContainer>
 )
 
