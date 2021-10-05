@@ -1,31 +1,24 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import { MapsApiKey } from '../../variables'
 import { Container } from './styles/MapContainer' 
 
-const defaultProps = {
+const MapContainer = ({lat= 53.000000 , long = 60.000000}) =>{
+  const latitud = Number(lat)
+  const longitud = Number(long)
+  const defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33,
+      lat: latitud ?  latitud : 49.257333 ,
+      lng: longitud ? longitud : 123.1552957
     },
     zoom: 11,
   }
-  const AnyReactComponent = ({ text }) => <div>{text}</div>
-
-const MapContainer = ({lat= 59.955413, long = 30.337844}) =>{
-    console.log(lat)
-    console.log(long)
     return(
         <Container>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: MapsApiKey}}
+          bootstrapURLKeys={{ key: process.env.MapsApiKey}}
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
-          <AnyReactComponent
-            lat={lat}
-            lng={long}
-          />
         </GoogleMapReact>
       </Container>
     )

@@ -4,9 +4,9 @@ import Seo from "../components/shared/seo"
 import CompanyDetails from '../components/company/CompanyDetails'
 import Countries from '../components/shared/Countries'
 import styled from '@emotion/styled'
-import meet from '../images/assets/about/desktop/meet.jpg'
-import woman from '../images/assets/about/desktop/woman.jpg'
-import pictures from '../images/assets/about/desktop/pictures.jpg'
+import meet from '../images/assets/about/meet.jpg'
+import woman from '../images/assets/about/woman.jpg'
+import pictures from '../images/assets/about/pictures.jpg'
 
 const Conatiner = styled.section`
 margin-block: 70px;

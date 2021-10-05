@@ -13,6 +13,7 @@ const fadeInDown = keyframes`
 `
 
 
+
 export const HeaderContainer = styled.header`
 padding-block: 20px;
 position: fixed;
@@ -27,21 +28,30 @@ z-index: 100000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    a{
+        img{
+            width: 200px;
+            margin: 0px;
+        }
+    }
     button{
         border: none;
         background: none;
     }
 }
 @media (min-width: 825px) {
-    width: 80%;
-    margin: 0 auto;
+    section{
     display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     .container{
         width: 100%;
         button{
             display: none;
         }
     }
+}
 }
 `
 
@@ -64,13 +74,19 @@ a{
     letter-spacing: 2px;
     padding-bottom: 10px;
 }
+.activePage{
+    border-bottom: 2px solid #E88069;
+  }
 `
 export const MenuDesktop = styled.div`
 display: none;
+.activePage{
+    border-bottom: 2px solid #E88069;
+  }
 @media (min-width: 825px) {
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     justify-content: space-between;
     a{
         text-decoration: none;

@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
-import home from '../../../images/assets/home/desktop/home.svg'
+import home from '../../../images/assets/home/home.svg'
 
 export const Container =  styled.section`
 width: 90%;
+max-width: 1200px;
 margin: 0 auto;
 .description{
     display: flex;
@@ -43,7 +44,7 @@ margin: 0 auto;
             align-items: flex-start;
             margin-left: 25px;
             p{
-                width: 100%;
+                width: 80%;
                 text-align: initial;
             }
         }

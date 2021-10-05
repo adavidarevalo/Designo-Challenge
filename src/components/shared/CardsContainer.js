@@ -1,8 +1,8 @@
 import React from 'react'
 import CardActivity from './CardActivity'
-import laptop from '../../images/assets/home/desktop/laptop.jpg'
-import appDesign from '../../images/assets/home/desktop/appDesign.jpg'
-import graphicDesign from '../../images/assets/home/desktop/graphicDesign.jpg'
+import laptop from '../../images/assets/home/laptop.jpg'
+import appDesign from '../../images/assets/home/appDesign.jpg'
+import graphicDesign from '../../images/assets/home/graphicDesign.jpg'
 
 
 import { Container } from './styles/CardsContainer'

@@ -8,6 +8,12 @@ padding-block: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    a{
+        img{
+            width: 200px;
+            margin: 0px;
+        }
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -18,11 +24,18 @@ padding-block: 50px;
             color: white;
             text-decoration: none;
             margin-block: 10px;
+            &:hover{
+                border-bottom: 2px solid #E88069;
+            }
+        }
+        .activePage{
+            border-bottom: 2px solid #E88069;
         }
     }
 }
 .AddressContainer{
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     div{
         margin-block: 50px;
@@ -48,6 +61,9 @@ padding-block: 50px;
             width: 25px;
             height: 27px;
             margin: 0px;
+            &:hover{
+                filter: invert(.2);
+            }
         }
     }
 }
@@ -55,6 +71,7 @@ padding-block: 50px;
     .mainFooter{
         flex-direction: row;
         width: 80%;
+        max-width: 1200px;
         margin: 0 auto;
         justify-content: space-between;
         div{
@@ -72,6 +89,7 @@ padding-block: 50px;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 80%;
+        max-width: 1200px;
         margin: 0 auto;
         div{
             margin-right: 25px;

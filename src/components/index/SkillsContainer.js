@@ -22,12 +22,11 @@ const SkillsContainer = () => {
       
     `)
     const [elements, setElements] = useState([...SkillsGraphql.allDatoCmsSkillscontainer.edges])
-    console.log(elements)
     return(
         <Container>
             {elements.map(item => (
                 <div key={item.node.id} className='description'>
-                    <img src={item.node.image.url}/>
+                    <img src={item.node.image.url} alt='element'/>
                     <div>
                         <h2>{item.node.title}</h2>
                         <p>{item.node.description}</p>

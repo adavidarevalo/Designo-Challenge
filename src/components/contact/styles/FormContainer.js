@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
-import circle from '../../../images/assets/about/desktop/circle.svg'
+import circle from '../../../images/assets/about/circle.svg'
 
 export const Container = styled.section`
 background: #E88069;
 background-image: url(${circle});
 padding: 30px 20px;
+max-width: 1200px;
 div{
     color: white;
     text-align: center;
@@ -55,6 +56,9 @@ form{
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-top: 20px;
+        &:hover{
+            background: #c1c0c0;
+        }
     }
 }
 @media (min-width: 600px) {
@@ -62,6 +66,9 @@ form{
     margin: 0 auto;
     border-radius: 15px;
     padding: 50px 80px;
+}
+@media (min-width: 825px) {
+    width: 80%;
 }
 @media (min-width: 1000px) {
     display: flex;

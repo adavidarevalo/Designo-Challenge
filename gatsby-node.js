@@ -12,7 +12,6 @@ exports.createPages = async({actions, graphql, reporter})=>{
         reporter.panic("There wasn`t a Error", result.error)
       }
       const pageDinamic = result.data.allDatoCmsPagesdinamic.nodes;
-      console.log(pageDinamic)
       pageDinamic.forEach(info => {
         actions.createPage({
             path: info.name,

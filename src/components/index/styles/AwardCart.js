@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import home from '../../../images/assets/home/desktop/home.svg'
+import home from '../../../images/assets/home/home.svg'
 
 export const SectionContainer = styled.section`
 background: #E88069;
@@ -9,6 +9,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: 85px;
+max-width: 1200px;
 div{
     width: 90%;
     margin: 0 auto;
@@ -32,6 +33,12 @@ div{
         border: none;
         border-radius: 5px;
         background: white;
+        transition: background .5s, transform .5s;
+        &:hover{
+            background: #cf7460;
+            color: white;
+            border: 1px solid #e78c78;
+        }
     }
 }
 img{

@@ -10,7 +10,8 @@ margin-block: 70px;
 
 const contact = () => {
     return(
-        <Layout>
+        <Layout hiden='true'>
+            <Seo title="Contact"/>
             <Conatiner>
                 <FormContainer/>
                 <Countries/>

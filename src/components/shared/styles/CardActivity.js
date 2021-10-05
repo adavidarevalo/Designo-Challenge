@@ -34,6 +34,10 @@ export const Container = styled.article`
             align-items: baseline;
             img{
                 margin-left: 10px;
+                margin-bottom: 0px;
+            }
+            &:hover{
+                border-bottom: 1px solid white;
             }
         }
     }

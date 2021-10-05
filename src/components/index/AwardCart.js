@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionContainer } from './styles/AwardCart'
-import phone from '../../images/assets/home/desktop/phone.png'
+import phone from '../../images/assets/home/phone.png'
 
 const AwardCart = () =>(
     <SectionContainer>

@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -33,6 +37,12 @@ module.exports = {
       options:{
         apiToken: `c34ada11ead74c73db9d4746dfef98`
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: {
+        MapsApiKey: process.env.MapsApiKey,
+      },
+    },
   ],
 }

@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
-import circle from '../../../images/assets/about/desktop/circle.svg'
+import circle from '../../../images/assets/about/circle.svg'
 
 export const Container = styled.article`
 border-radius: 15px;
+max-width: 1200px;
 img{
     width: 100%;
     margin: 0px;
@@ -11,13 +12,17 @@ div{
     background-image: url(${circle});
     padding: 35px 10px;
     color: white;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     h2{
         text-align: center;
+    }
+    p{
+        width: 80%;
+        margin: 20px auto;
     }
 }
 .colorDark{
@@ -45,5 +50,9 @@ div{
     img{
         border-radius: 15px;
     }
+}
+@media (min-width: 1000px) {
+    width: 80%;
+    margin: 0px auto;
 }
 `

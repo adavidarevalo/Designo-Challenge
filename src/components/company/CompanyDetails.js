@@ -5,7 +5,7 @@ import { Container } from './styles/CompanyDetails'
 const CompanyDetails = ({backgroundElement, title, firstText, secondText, gridElement, ColorElement, image}) => {
     return(
         <Container style={{background: backgroundElement}} className={gridElement && 'GridInvert'}>
-            <img src={image} alt=''/>
+            <img src={image} alt='Company'/>
             <div className={ColorElement && 'colorDark'}>
                 <h2>{title}</h2>
                 <p>{firstText}</p>

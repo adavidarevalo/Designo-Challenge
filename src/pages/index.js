@@ -8,7 +8,7 @@ import SkillsContainer from '../components/index/SkillsContainer'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="pepe" />
+    <Seo title="Home" />
       <AwardCart/>
       <CardsContainer/>
       <SkillsContainer/>

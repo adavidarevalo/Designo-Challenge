@@ -1,32 +1,36 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
 import { FooterContainer } from './styles/Footer'
-import facebook from '../../images/assets/shared/desktop/facebook.svg'
-import youtube from '../../images/assets/shared/desktop/youtube.svg'
-import twitter from '../../images/assets/shared/desktop/twitter.svg'
-import pinterest from '../../images/assets/shared/desktop/pinterest.svg'
-import instagram from '../../images/assets/shared/desktop/instagram.svg'
+import facebook from '../../images/assets/shared/facebook.svg'
+import youtube from '../../images/assets/shared/youtube.svg'
+import twitter from '../../images/assets/shared/twitter.svg'
+import pinterest from '../../images/assets/shared/pinterest.svg'
+import instagram from '../../images/assets/shared/instagram.svg'
 import CartTalk from './CartTalk'
+import logoDark from '../../images/assets/shared/logoLight.png'
 
-const Footer = () => {
+const Footer = ({hiden}) => {
     return(
         <>
-        <CartTalk/>
+        {!hiden && <CartTalk/>}
         <FooterContainer>
             <div className='mainFooter'>
-            <StaticImage
-                src='../../images/assets/shared/desktop/logoLight.png'
-                quality={95}
-                layout="fixed"
-                width={220}
-                height={30}
-                alt="Logo"
-                />
+                <Link to='/'>
+                    <img src={logoDark} alt='logo'/>
+                </Link>
                 <div>
-                    <Link to='/'>company</Link>
-                    <Link to='/'>locantions</Link>
-                    <Link to='/'>contact</Link>
+                    <Link 
+                    to='/company'
+                    activeClassName="activePage"
+                    >company</Link>
+                    <Link 
+                    to='/location'
+                    activeClassName="activePage"
+                    >locantions</Link>
+                    <Link 
+                    to='/contact'
+                    activeClassName="activePage"
+                    >contact</Link>
                 </div>
             </div>
             <div className='AddressContainer'>

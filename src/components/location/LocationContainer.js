@@ -15,10 +15,11 @@ const LocationContainer = ({item}) => {
         subtitleAddress2,
         title
     } = item.node
+    
     return(
         <LocationStyled className={gridstyled && 'GridInvert'}>
             <div className='MapElement'>
-                <MapContainer/>
+                <MapContainer lat={lat} long={log}/>
             </div>
             <div className='description'>
                 <div>

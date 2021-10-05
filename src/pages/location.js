@@ -31,6 +31,7 @@ const Location = () => {
     console.log(data.allDatoCmsLocalizationcontainer.edges)
     return(
         <Layout>
+          <Seo title="Location"/>
             <Conatiner>
                 {data.allDatoCmsLocalizationcontainer.edges.map(item => <LocationContainer item={item}/>)}
             </Conatiner>

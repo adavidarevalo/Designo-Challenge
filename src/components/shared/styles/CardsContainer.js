@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.section`
-.css-76h5vz{
+max-width: 1200px;
+.css-1uw34le{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
